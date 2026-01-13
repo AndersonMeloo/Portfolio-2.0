@@ -2,6 +2,13 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 
+import Sobre from "@/app/components/Sobre/page";
+import Stacks from "./components/Stacks/page";
+import Particles from "@/components/ui/Particles";
+import Open from "./components/Open/page";
+import CustomCursor from "@/components/ui/CustomCursor";
+import Home from "./components/Home/page";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -19,16 +26,24 @@ export const metadata: Metadata = {
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <div className="relative min-h-screen">
+          <Particles className="absolute inset-0 -z-10" />
+          <CustomCursor />
+
+          {children}
+       
+          <Home />
+        </div>
       </body>
+
     </html>
   );
 }
