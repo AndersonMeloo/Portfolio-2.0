@@ -3,11 +3,22 @@
 import { useEffect, useState } from 'react';
 
 export default function CustomCursor() {
-    
+
+    // Rastrear Posição do Cursor e o Estado de Hover
+    const [enabled] = useState(() => {
+        if (typeof window === 'undefined') return false;
+        return window.matchMedia('(pointer: fine)').matches;
+    });
+
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [isHovering, setIsHovering] = useState(false);
 
+
     useEffect(() => {
+
+        // Detecta se o dispositivo possui mouse
+        if (!enabled) return;
+
         const move = (e: MouseEvent) => {
             setPosition({ x: e.clientX, y: e.clientY });
         };
@@ -30,6 +41,9 @@ export default function CustomCursor() {
             });
         };
     }, []);
+
+    // Habilita o cursor personalizado apenas em dispositivos que não são touch
+    if (!enabled) return null;
 
     return (
         <div
