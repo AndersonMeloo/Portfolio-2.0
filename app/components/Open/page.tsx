@@ -5,7 +5,7 @@ function Open() {
 
     return (
 
-        <div className="h-screen w-full mb-10 flex items-center justify-center">
+        <div className="h-screen w-full mb-10 flex items-center justify-center text-center">
             <div className="relative z-10 w-full flex justify-center">
 
                 <div className="
@@ -25,14 +25,14 @@ function Open() {
                                 <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75"></span>
                                 <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
                             </span>
-                            <p className="text-white text-[14px]">Status</p>
+                            <p className="text-white text-[14px] font-mono">Status</p>
                         </div>
 
-                        <span className="text-white text-2xl">
+                        <span className="text-white text-2xl font-montserrat">
                             Engenheiro de Software
                         </span>
 
-                        <p className="text-white">Disponível para oportunidades • Aberto a novos projetos</p>
+                        <p className="text-white font-nunito">Disponível para oportunidades • Aberto a novos projetos</p>
 
                         <Link
                             href='https://portfolio-anderson-nine.vercel.app/AndersonMelo.pdf'
@@ -43,7 +43,7 @@ function Open() {
                             <span className="transition-opacity duration-200 group-hover:opacity-0">
                                 ●
                             </span>
-                            <span>Currículo</span>
+                            <span className="font-montserrat">Currículo</span>
                             <span className="
     opacity-0
     -translate-x-2

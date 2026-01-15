@@ -9,10 +9,10 @@ function Sobre() {
 
         <>
             <div className="w-full h-screen flex items-center justify-center flex-col text-white mt-10">
-                <h1 className="text-7xl font-bold">Anderson Melo</h1>
+                <h1 className="text-4xl sm:text-6xl lg:text-7xl transition-all duration-500 ease-in-out font-bold font-montserrat">Anderson Melo</h1>
 
                 <TextType   
-                    className="font-bold text-xl mt-4"
+                    className="font-bold text-xl mt-4 font-nunito"
                     text={["Engenheiro de Software", "Arquiteto de Código", "Solucionador de Problemas"]}
                     typingSpeed={90}
                     pauseDuration={2500}
@@ -20,7 +20,7 @@ function Sobre() {
                     cursorCharacter="|"
                 />
 
-                <p className="mt-6 text-white/70">Transformando ideias em código desde 2023</p>
+                <p className="mt-6 text-center text-white/70 font-nunito">Transformando ideias em código desde 2023</p>
 
 
                 <div
@@ -56,7 +56,7 @@ function Sobre() {
                 <div className="flex justify-center mt-40">
                     <MdKeyboardArrowDown
                         size={30}
-                        className="text-2xl animate-bounce [animation-duration:1.5s] opacity-70"
+                        className="text-2xl animate-bounce animation-duration opacity-70"
                     />
                 </div>
             </div>

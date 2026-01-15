@@ -1,11 +1,8 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Geist_Mono, Montserrat, Nunito, Roboto, Syne } from "next/font/google";
 import "./globals.css";
 
-import Sobre from "@/app/components/Sobre/page";
-import Stacks from "./components/Stacks/page";
 import Particles from "@/components/ui/Particles";
-import Open from "./components/Open/page";
 import CustomCursor from "@/components/ui/CustomCursor";
 import Home from "./components/Home/page";
 
@@ -18,6 +15,31 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+})
+
+const nunito = Nunito({
+  subsets: ["latin"],
+  variable: "--font-nunito",
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  variable: "--font-roboto",
+  weight: ["300", "400", "500", "700"],
+});
+
+const numbers = Syne({
+  subsets: ["latin"],
+  variable: "--font-numbers",
+  weight: ["500", "600", "700", "800"],
+});
+
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -32,14 +54,22 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`
+    ${geistSans.variable}
+    ${geistMono.variable}
+    ${montserrat.variable}
+    ${nunito.variable}
+    ${roboto.variable}
+    ${numbers.variable}
+    antialiased
+  `}
       >
         <div className="relative min-h-screen">
           <Particles className="absolute inset-0 -z-10" />
           <CustomCursor />
 
           {children}
-       
+
           <Home />
         </div>
       </body>

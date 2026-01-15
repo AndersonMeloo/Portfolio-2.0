@@ -25,7 +25,7 @@ const techLogos = [
     //     node: (
     //         <div className="flex flex-col items-center gap-2 cursor-pointer p-2">
     //             <SiJavascript color="#F7DF1E" />
-    //             <span className="text-sm text-white mt-3">JavaScript</span>
+    //             <span className="text-sm text-white mt-3 font-mono">JavaScript</span>
     //         </div>
     //     ),
     //     title: "JavaScript",
@@ -34,7 +34,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer p-2">
                 <SiTypescript color="#3178C6" />
-                <span className="text-sm text-white mt-3">TypeScript</span>
+                <span className="text-sm text-white mt-3 font-mono">TypeScript</span>
             </div>
         ),
         title: "TypeScript",
@@ -43,7 +43,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiReact color="#61DAFB" />
-                <span className="text-sm text-white mt-3">React</span>
+                <span className="text-sm text-white mt-3 font-mono">React</span>
             </div>
         ),
         title: "React",
@@ -52,7 +52,7 @@ const techLogos = [
     //     node: (
     //         <div className="flex flex-col items-center gap-2 cursor-pointer">
     //             <SiSass color="#CC6699" />
-    //             <span className="text-sm text-white mt-3">Sass</span>
+    //             <span className="text-sm text-white mt-3 font-mono">Sass</span>
     //         </div>
     //     ),
     //     title: "Sass",
@@ -61,7 +61,7 @@ const techLogos = [
     //     node: (
     //         <div className="flex flex-col items-center gap-2 cursor-pointer">
     //             <SiPhp color="#777BB4" />
-    //             <span className="text-sm text-white mt-3">PHP</span>
+    //             <span className="text-sm text-white mt-3 font-mono">PHP</span>
     //         </div>
     //     ),
     //     title: "PHP",
@@ -70,7 +70,7 @@ const techLogos = [
     //     node: (
     //         <div className="flex flex-col items-center gap-2 cursor-pointer">
     //             <SiMysql color="#4479A1" />
-    //             <span className="text-sm text-white mt-3">MySQL</span>
+    //             <span className="text-sm text-white mt-3 font-mono">MySQL</span>
     //         </div>
     //     ),
     //     title: "MySQL",
@@ -79,7 +79,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiNodedotjs color="#339933" />
-                <span className="text-sm text-white mt-3">Node.js</span>
+                <span className="text-sm text-white mt-3 font-mono">Node.js</span>
             </div>
         ),
         title: "Node.js",
@@ -88,7 +88,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiGit color="#F05032" />
-                <span className="text-sm text-white mt-3">Git</span>
+                <span className="text-sm text-white mt-3 font-mono">Git</span>
             </div>
         ),
         title: "Git",
@@ -97,7 +97,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiTailwindcss color="#38BDF8" />
-                <span className="text-sm text-white mt-3">Tailwind CSS</span>
+                <span className="text-sm text-white mt-3 font-mono">Tailwind CSS</span>
             </div>
         ),
         title: "Tailwind CSS",
@@ -106,7 +106,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiMongodb color="#47A248" />
-                <span className="text-sm text-white mt-3">MongoDB</span>
+                <span className="text-sm text-white mt-3 font-mono">MongoDB</span>
             </div>
         ),
     },
@@ -114,7 +114,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiPostgresql color="#4169E1" />
-                <span className="text-sm text-white mt-3">PostgreSQL</span>
+                <span className="text-sm text-white mt-3 font-mono">PostgreSQL</span>
             </div>
         ),
     },
@@ -122,7 +122,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiDocker color="#2496ED" />
-                <span className="text-sm text-white mt-3">Docker</span>
+                <span className="text-sm text-white mt-3 font-mono">Docker</span>
             </div>
         ),
     },
@@ -130,7 +130,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiNextdotjs color="#FFFFFF" />
-                <span className="text-sm text-white mt-3">Next.js</span>
+                <span className="text-sm text-white mt-3 font-mono">Next.js</span>
             </div>
         ),
     },
@@ -138,7 +138,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiNestjs color="#E0234E" />
-                <span className="text-sm text-white mt-3">Nest.js</span>
+                <span className="text-sm text-white mt-3 font-mono">Nest.js</span>
             </div>
         ),
     },
@@ -146,7 +146,7 @@ const techLogos = [
         node: (
             <div className="flex flex-col items-center gap-2 cursor-pointer">
                 <SiPrisma color="#2D3748" />
-                <span className="text-sm text-white mt-3">Prisma</span>
+                <span className="text-sm text-white mt-3 font-mono">Prisma</span>
             </div>
         ),
     },
@@ -165,7 +165,7 @@ function Stacks() {
 
         <div className="w-[80%] mx-auto">
 
-            <h1 className='text-white text-center text-4xl mb-4'>Stack de Tecnologias</h1>
+            <h1 className='text-white text-center text-4xl mb-4 font-montserrat'>Stack de Tecnologias</h1>
 
             <div
                 style={{ height: '200px', position: 'relative', overflow: 'hidden' }}
